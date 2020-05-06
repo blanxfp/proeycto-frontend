@@ -1,15 +1,31 @@
 body {
-    font-family: 'Courier New';
-    font-size: 20px;
-    line-height: 20px;
+    font-family: 'Courier New', 'Consolas', 'monospace';
+    font-size: 15px;
+    line-height: 17px;
 }
 
 header {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 23px;
+    line-height: 23px;
+    background: white;
 }
 
-.loaded img {
+.zindex-1 {
+    z-index: 26;
+}
+
+.hide-image img {
     opacity: 0;
     visibility: hidden;
+}
+
+.projects .row > div,
+.projects .row > div img {
+    transition: all 0.5s ease-in;
+}
+
+@media (max-width: 768px) {
+    .embed-responsive-16by9::before {
+        padding-top: calc(100vw * 3 / 2);
+    }
 }
