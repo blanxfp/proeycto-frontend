@@ -4,10 +4,62 @@ body {
     line-height: 17px;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a,
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.btn,
+.form-control,
+.custom-file-label {
+    border-radius: 0;
+}
+
+.custom-file-label {
+    left: 15px;
+    right: 15px;
+}
+
 header {
+    background: white;
+}
+
+header .logo {
     font-size: 23px;
     line-height: 23px;
-    background: white;
+}
+
+.filter-button,
+.filter ul li,
+.contact {
+    cursor: pointer;
+}
+
+.filter ul {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    right: 0;
+}
+
+.show-filters .filter-button {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-filters ul {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    right: 0;
+    width: max-content;
 }
 
 .zindex-1 {
@@ -22,6 +74,19 @@ header {
 .projects .row > div,
 .projects .row > div img {
     transition: all 0.5s ease-in;
+}
+
+#contact,
+#upload {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #ffffffe0;
+}
+
+#contact.open,
+#upload.open {
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (max-width: 768px) {
