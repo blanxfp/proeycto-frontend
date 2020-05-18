@@ -30,9 +30,10 @@ header {
     background: white;
 }
 
-header .logo {
-    font-size: 23px;
-    line-height: 23px;
+header h1 {
+    font-size: 19px;
+    line-height: 19px;
+    margin-bottom: 0;
 }
 
 .filter-button,
@@ -87,6 +88,17 @@ header .logo {
 #upload.open {
     opacity: 1;
     visibility: visible;
+}
+
+.form-control:focus,
+.custom-file-input:focus~.custom-file-label {
+    border-color: black;
+    box-shadow: none;
+}
+
+.btn.border[type=submit]:hover
+.btn.border[type=submit]:focus {
+    border: 1px solid black!important;
 }
 
 @media (max-width: 768px) {

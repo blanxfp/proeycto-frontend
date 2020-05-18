@@ -12,7 +12,6 @@ for (var i = 0; i < proyectos.length; i++) {
    var breakk = true;
 
    while (breakk) {
-     console.log(child.nodeType, Node.ELEMENT_NODE );
       if (child.nodeType === Node.ELEMENT_NODE) {
          index++;
       }
@@ -116,7 +115,6 @@ function closeModal() {
 }
 
 modalOuter.forEach(modal => modal.addEventListener('click', function(event) {
-  console.log('hei');
   const isOutside = !event.target.closest('.contact-wrapper');
   if (isOutside) {
     closeModal();
